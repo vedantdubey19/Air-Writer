@@ -1,45 +1,113 @@
-# Air Glitter ✨
+✨ Air Writer – Write in Air using Computer Vision
 
-An interactive, anti-gravity neon particle drawing application powered by Python and Google's MediaPipe machine learning library. Wave your hand in the air like a wand to sketch beautiful, fading, physics-based neon trails.
+Air Writer is a computer vision-based application that allows users to write text in the air using hand gestures, which gets captured and displayed on the screen in real-time.
 
-## 🚀 Features
+This project leverages OpenCV and hand tracking techniques to create a touchless writing experience — ideal for gesture-based interfaces, virtual drawing, and interactive systems.
 
-- **Real-Time Hand Tracking:** Utilizes the lightweight `mediapipe.tasks.vision` API natively on your CPU for sub-millisecond, highly-stable finger indexing.
-- **Physics Engine:** Custom Numpy Anti-gravity particle system so your sparks naturally float upwards (or downwards!) with dynamic momentum and decay.
-- **Open Palm Eraser:** Simply extend all your fingers into an open palm pose to instantly transform your glowing brush into a massive canvas eraser—pure magic!
-- **Glowing Graphics:** Core additive-blending architecture utilizing deep OpenCV float matrices and Gaussian blurring to create realistic, vibrant, additive neon effects.
-- **Customization Options:** Seamless, hot-swappable color palettes, brush sizes, and gravity toggles built elegantly into the interface.
+⸻
 
-## 🛠 Installation
+🚀 Features
+	•	✋ Real-time hand tracking
+	•	✍️ Write in the air using finger movements
+	•	🎯 Smooth drawing with gesture detection
+	•	🧠 Intelligent tracking using computer vision
+	•	🖥️ Live display of written strokes
+	•	❌ Clear screen gesture / reset option
 
-Ensure you have Python 3 installed on your machine. We recommend setting up a virtual environment.
+⸻
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/air-glitter.git
-cd air-glitter
+🛠️ Tech Stack
+	•	Python
+	•	OpenCV
+	•	NumPy
+	•	MediaPipe (for hand tracking)
 
-# 2. Setup your virtual environment
-python -m venv venv
-source venv/bin/activate  # Or `venv\Scripts\activate` on Windows
+⸻
 
-# 3. Install Python requirements
-pip install -r requirements.txt
-```
+📂 Project Structure
+Air-Writer/
+│── main.py              # Main application file
+│── requirements.txt     # Dependencies
+│── utils/               # Helper functions (if any)
+│── README.md            # Project documentation
 
-## 🎮 Running the Application
 
-Boot the desktop app directly from your terminal:
-```bash
-python main.py
-```
-*(Note: On initialization, the script will rapidly download a simple ~3MB MediaPipe tracking model to your directory.)*
 
-## ⌨️ Controls
+⸻
 
-- **Draw:** Point with your index finger.
-- **Erase:** Hold up an open Hand (Palm).
-- **`e` Key:** Toggle the finger eraser brush manually.
-- **`c` Key:** Instantly clear the canvas.
-- **`ESC` Key:** Shut down the application and disable the camera.
-- *Use your mouse pointer at the bottom of the screen to change your neon palette, brush size, or reverse particle gravity!*
+⚙️ Installation
+
+1. Clone the repository
+   git clone https://github.com/vedantdubey19/Air-Writer.git
+cd Air-Writer
+
+
+2. Create virtual environment (recommended)
+   conda create -n airwriter python=3.9
+conda activate airwriter
+
+3. Install dependencies
+   pip install -r requirements.txt
+
+▶️ Usage
+
+Run the application:
+   python main.py
+
+How it works:
+	•	Show your hand in front of the camera
+	•	Use your index finger to draw
+	•	Move finger in the air → drawing appears on screen
+	•	Use gestures to clear or control drawing
+
+⸻
+
+🧠 How It Works
+	1.	Camera captures real-time video feed
+	2.	Hand landmarks are detected using MediaPipe
+	3.	Index finger position is tracked
+	4.	Movement is converted into drawing strokes
+	5.	Strokes are rendered on a virtual canvas
+
+⸻
+
+📸 Demo (Optional)
+
+Add screenshots or GIFs here
+
+⸻
+
+🔮 Future Improvements
+	•	✍️ Add text recognition (convert drawing → text)
+	•	🎨 Multiple colors and brush sizes
+	•	🧾 Save drawings as images
+	•	🤖 Integrate AI handwriting recognition
+	•	🕹️ Gesture-based UI controls
+
+⸻
+
+🤝 Contributing
+
+Contributions are welcome!
+	1.	Fork the repo
+	2.	Create a new branch
+	3.	Make your changes
+	4.	Submit a pull request
+
+⸻
+
+📄 License
+
+This project is licensed under the MIT License.
+
+⸻
+
+🙌 Author
+
+Vedant Dubey
+	•	💻 Aspiring Full Stack & AI/ML Developer
+	•	🚀 Passionate about building real-world projects
+
+
+
+
