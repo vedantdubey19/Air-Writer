@@ -14,8 +14,6 @@ This project leverages OpenCV and hand tracking techniques to create a touchless
 	•	🖥️ Live display of written strokes
 	•	❌ Clear screen gesture / reset option
 
-⸻
-
 🛠️ Tech Stack
 	•	Python
 	•	OpenCV
